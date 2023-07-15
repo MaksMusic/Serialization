@@ -15,11 +15,7 @@ public class User implements Serializable {
 
     @Override
     public String toString() {
-        return "User{" +
-                "name='" + name + '\'' +
-                ", age=" + age +
-                ", time='" + time + '\'' +
-                '}';
+        return String.format("name:%s age:%d time:%s",name,age,time);
     }
 
     public String getName() {
